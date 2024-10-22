@@ -31,6 +31,9 @@ bcrypt.hash(someOtherPlaintextPassword, saltRounds, (err, hash) => {
 
 //START_SYNC
 
+
+
+//END_SYNC
 const hash = bcrypt.hashSync(myPlaintextPassword, saltRounds);
 console.log(hash);
 const result = bcrypt.compareSync(myPlaintextPassword, hash);
@@ -39,10 +42,7 @@ console.log(result);
 const hash2 = bcrypt.hashSync(someOtherPlaintextPassword, saltRounds);
 console.log(hash2);
 const result2 = bcrypt.compareSync(someOtherPlaintextPassword, hash);
-console.log(result2);
-
-//END_SYNC
-
+console.log({ result2 });
 
 
 
